@@ -91,3 +91,9 @@ $ python AnimeGAN/main.py \
     --max_size 512 \
     --min_size 32
 ```
+> 参数：    
+> img_path：输入图像路径  
+> save_path：输出图像保存目录  
+> use_gpu：是否使用GPU进行推理，最好使用GPU进行推理  
+> max_size：模型输入的最大尺寸，尺寸越大消耗的内存/显存会越大  
+> min_size：模型输入的最小尺寸  

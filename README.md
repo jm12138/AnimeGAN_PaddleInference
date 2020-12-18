@@ -5,6 +5,14 @@
 * 原项目：[AnimeGAN V1](https://github.com/TachibanaYoshino/AnimeGAN)、[AnimeGAN V2](https://github.com/TachibanaYoshino/AnimeGANv2)
 * 本项目使用到的所有模型均转换至官方项目提供的预训练模型
 * 感谢官方项目的开源代码和模型
+## 效果展示
+* 输入图像：
+
+![输入图像](https://ai-studio-static-online.cdn.bcebos.com/fff48f6cd38e41f5bc931d86d08143c835ef827866364fc587b6d3b4fc7dcc98)
+
+* 输出图像：
+
+![输出图像](https://ai-studio-static-online.cdn.bcebos.com/f8c1acba47a74f23b3fb9bac43a6d91662785872c08148d5a90f22c911a919c7)
 ## 模型列表
 | Model | Style | Epoch | PaddleHub Module |
 | -------- | -------- | -------- | -------- |

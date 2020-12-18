@@ -81,12 +81,12 @@ $ pip install -r requirements.txt
 ```
 * 安装 PaddlePaddle >= 2.0.0rc0 ：请参考官网的[安装教程](https://www.paddlepaddle.org.cn)
 * 下载预训练模型：[下载链接](https://bj.bcebos.com/v1/ai-studio-online/6f827f241bc14536b335a3f3b5c1ed952618faee9a794348b61e03489271fbb7?responseContentDisposition=attachment%3B%20filename%3DAnimeGAN.zip&authorization=bce-auth-v1%2F0ef6765c1e494918bc0d4c3ca3e5c6d1%2F2020-11-07T15%3A56%3A54Z%2F-1%2F%2Ff24e418e4b134203e8665ba1db53239bb20ba133dce283af640439aed3bf5825)
-
+* 解压预训练模型至项目目录
 * 运行图像动漫化主程序：
 ```shell
-$ python AnimeGAN/main.py \
-    --img_path AnimeGAN/test.jpg \
-    --save_path AnimeGAN/save_imgs \
+$ python main.py \
+    --img_path test.jpg \
+    --save_path save_imgs \
     --use_gpu True \
     --max_size 512 \
     --min_size 32

@@ -17,6 +17,8 @@
 | AnimeGAN V2 | Paprika | 98 | animegan_v2_paprika_98 |
 | AnimeGAN V2 | Shinkai | 33 | animegan_v2_shinkai_33 |
 | AnimeGAN V2 | Shinkai | 53 | animegan_v2_shinkai_53 |
+## AIStudio 在线体验
+* [PaddleInference：风景图像动漫化模型AnimeGAN的推理部署](https://aistudio.baidu.com/aistudio/projectdetail/1201335)
 ## 使用 PaddleHub 进行快速调用
 * 安装 PaddlePaddle >= 2.0.0rc0 ：请参考官网的[安装教程](https://www.paddlepaddle.org.cn)
 * 安装 PaddleHub ：
@@ -59,7 +61,7 @@ def style_transfer(
 > output_dir (str): 图片的保存路径，默认设为 output   
 > min_size (int): 输入图片的短边最小尺寸，默认设为 32   
 > max_size (int): 输入图片的短边最大尺寸，默认设为 1024  
-## 快速使用
+## 基于 PaddleInference 源码使用
 * 克隆项目：
 ```shell
 $ git clone https://github.com/jm12138/AnimeGAN_PaddleInference
@@ -72,7 +74,12 @@ $ pip install -r requirements.txt
 * 安装 PaddlePaddle >= 2.0.0rc0 ：请参考官网的[安装教程](https://www.paddlepaddle.org.cn)
 * 下载预训练模型：[下载链接](https://bj.bcebos.com/v1/ai-studio-online/6f827f241bc14536b335a3f3b5c1ed952618faee9a794348b61e03489271fbb7?responseContentDisposition=attachment%3B%20filename%3DAnimeGAN.zip&authorization=bce-auth-v1%2F0ef6765c1e494918bc0d4c3ca3e5c6d1%2F2020-11-07T15%3A56%3A54Z%2F-1%2F%2Ff24e418e4b134203e8665ba1db53239bb20ba133dce283af640439aed3bf5825)
 
-* 运行AnimeGAN图像动漫化脚本：
+* 运行图像动漫化主程序：
 ```shell
-$ pip install -r requirements.txt
+$ python AnimeGAN/main.py \
+    --img_path AnimeGAN/test.jpg \
+    --save_path AnimeGAN/save_imgs \
+    --use_gpu True \
+    --max_size 512 \
+    --min_size 32
 ```
